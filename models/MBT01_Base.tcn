@@ -1,0 +1,55 @@
+TPA\ALBATROS\EDICAD\02.00:1665:r0w0s6
+::SIDE=0;1;4;6;
+::ATTR=hide;varv
+::UNm DL=#width# DH=#heigth# DS=#depth#
+'tcn version=2.9.20
+'code=ansi
+EXE{
+#0=0
+#1=0
+#2=0
+#3=0
+#4=0
+}EXE
+OFFS{
+#0=0.0|0
+#1=0.0|0
+#2=0.0|0
+}OFFS
+VARV{
+#0=0.0|0
+#1=0.0|0
+}VARV
+VAR{
+#3=8.7||w|f|rl
+}VAR
+SPEC{
+}SPEC
+INFO{
+}INFO
+OPTI{
+:: OPTKIND=%;0 OPTROUTER=%;0 LSTCOD=%0%1%2
+}OPTI
+LINK{
+}LINK
+SIDE#0{
+W#1511{ ::WT2 WF=1  #8098=..\custom\mcr\fresatebarnesting.tmcr }W
+}SIDE
+SIDE#1{
+$=Up
+W#1050{ ::WT2 WS=3  #8098=..\custom\mcr\lame.tmcr #6=1 #8021=h-50 #8022=-10 #9505=0 #8503=r\rl #8509=0 #8514=1 #8515=1 #8516=2001 #8517=l #8525=2 #8526=0 #8527=0 }W
+}SIDE
+SIDE#3{
+::DX=0 XY=1
+}SIDE
+SIDE#4{
+::DX=0 XY=1
+W#1001{ ::WT2 WS=2  #8098=..\custom\mcr\fittingx.tmcr #6=1 #9505=0 #8508=0 #8509=0 #8510=40 #8511=lf-40 #8512=(lf-40-40)/5 #8513=-12 #8517=0 #8518=s/2 #8520=1 #8522=8 #8525=0 }W
+}SIDE
+SIDE#5{
+::DX=0 XY=1
+}SIDE
+SIDE#6{
+::DX=0 XY=1
+W#1001{ ::WT2 WS=1  #8098=..\custom\mcr\fittingx.tmcr #6=1 #9505=0 #8508=0 #8509=0 #8510=40 #8511=lf-40 #8512=(lf-40-40)/5 #8513=-12 #8517=0 #8518=s/2 #8520=1 #8522=8 #8525=0 }W
+}SIDE

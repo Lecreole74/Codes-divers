@@ -1,0 +1,51 @@
+TPA\ALBATROS\EDICAD\02.00:1665:r0w0s4
+::SIDE=0;
+::ATTR=hide;varv
+::UNm DL=#width# DH=#heigth# DS=#depth#
+'tcn version=2.9.20
+'code=ansi
+EXE{
+#0=0
+#1=0
+#2=0
+#3=0
+#4=0
+}EXE
+OFFS{
+#0=0.0|0
+#1=0.0|0
+#2=0.0|0
+}OFFS
+VARV{
+#0=0.0|0
+#1=0.0|0
+}VARV
+VAR{
+}VAR
+SPEC{
+}SPEC
+INFO{
+}INFO
+OPTI{
+:: OPTKIND=%;0 OPTROUTER=%;0 LSTCOD=%0%1%2
+}OPTI
+LINK{
+}LINK
+SIDE#0{
+W#1511{ ::WT2 WF=1  #8098=..\custom\mcr\fresatebarnesting.tmcr }W
+}SIDE
+SIDE#1{
+$=Up
+}SIDE
+SIDE#3{
+::DX=0 XY=1
+}SIDE
+SIDE#4{
+::DX=0 XY=1
+}SIDE
+SIDE#5{
+::DX=0 XY=1
+}SIDE
+SIDE#6{
+::DX=0 XY=1
+}SIDE

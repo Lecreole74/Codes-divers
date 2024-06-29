@@ -1,0 +1,82 @@
+TPA\ALBATROS\EDICAD\02.00:1665:r0w0s15
+::SIDE=0;1;
+::UNm DL=#width# DH=#heigth# DS=#depth#
+'tcn version=2.9.20
+'code=ansi
+EXE{
+#0=0
+#1=0
+#2=0
+#3=0
+#4=0
+}EXE
+OFFS{
+#0=0.0|0
+#1=0.0|0
+#2=0.0|0
+}OFFS
+VARV{
+#0=0.0|0
+#1=0.0|0
+}VARV
+VAR{
+#0=1|Avec rainure|r|i|rainure
+#1=8.7|Largeur rainure|w|f|rl
+#2=-8|Profondeur rainure|r|f|rp
+#3=50|Distance rainure du fond|r|f|rd
+#4=1|Avec tourillons|r|i|tourillons
+#5=40|Distance du bord|r|f|tdb
+#6=0|Delta d�but|r|f|tds
+#7=0|Delta fin|r|f|tdf
+#8=6|Nombre de tourillons|r|f|tni
+#9=-12|Profondeur tourillon|r|f|tp
+#10=8|Diam�tre tourillon|r|f|td
+#11=1|Raidisseur vertical|r|i|raidisseurv1
+#12=1|Raidisseur arri�re|r|i|raidisseurar
+#13=1|Raidisseur  avant|r|i|raidisseurav
+#14=120|Largeur raidisseur|r|f|ral
+#15=30|Distance bord tourillons raidisseur|r|f|rad
+#16=1|Ajout tacquet porte|w|i|porte
+#17=1|Ajout trous 3 tiroirs|w|i|3tiroirs
+}VAR
+SPEC{
+}SPEC
+INFO{
+}INFO
+OPTI{
+}OPTI
+LINK{
+}LINK
+SIDE#0{
+W#1511{ ::WT2 WF=1  #8098=..\custom\mcr\fresatebarnesting.tmcr }W
+}SIDE
+SIDE#1{
+$=Up
+W#1050{ ::WT2 WS=2  #8098=..\custom\mcr\lame.tmcr #6=1 #8020=0 #8021=h-r\rd #8022=r\rp #9505=0 #8503=r\rl #8509=0 #8514=1 #8515=1 #8516=2001 #8517=l #8525=2 #8526=0 #8527=0 }W
+W#1003{ ::WT2 WS=7  #8098=..\custom\mcr\fittingy.tmcr #6=1 #9505=0 #8508=0 #8509=0 #8510=r\tdb+r\tds #8511=h-r\tdb-r\tdf #8512=(h-r\tdb-r\tds-r\tdb-r\tdf)/(r\tni-1) #8513=r\tp #8517=0 #8518=s/2 #8520=1 #8522=r\td #8525=0 }W
+W#1001{ ::WT2 WS=9 W$=~raidisseur fond  #8098=..\custom\mcr\fittingx.tmcr #6=1 #9505=0 #8508=0 #8509=0 #8510=l-r\ral+r\rad #8511=l #8512=r\ral-2*r\rad #8513=r\tp #8517=0 #8518=h-s/2 #8520=1 #8522=r\td #8525=0 }W
+W#1003{ ::WT2 WS=10 W$=~raidisseur arri�re  #8098=..\custom\mcr\fittingy.tmcr #6=1 #9505=0 #8508=0 #8509=0 #8510=h-r\rd-r\rl-r\ral+r\rad #8511=h-r\rd-r\rl-r\ral+r\rad+r\ral-2*r\rad #8512=r\ral-2*r\rad #8513=r\tp #8517=0 #8518=l-s/2 #8520=1 #8522=r\td #8525=0 }W
+W#1003{ ::WT2 WS=11 W$=~raidisseur avant  #8098=..\custom\mcr\fittingy.tmcr #6=1 #9505=0 #8508=0 #8509=0 #8510=r\rad #8511=r\ral-r\rad #8512=r\ral-2*r\rad #8513=r\tp #8517=0 #8518=l-s/2 #8520=1 #8522=r\td #8525=0 }W
+W#2001{ ::WTg  #8070=r\porte #8060=4 #8073=1 #8065=0 #8061=0 #8066=0 #8062=0 #8076=0 }W
+W#81{ ::WTp WS=12  #8015=0 #1=110-16 #2=37 #3=-14 #1002=8 #201=1 #203=1 #1001=0 #9505=0 }W
+W#81{ ::WTp WS=13  #8015=1 #1=32 #1002=8 #201=1 #203=1 #1001=0 #9505=0 }W
+W#81{ ::WTp WS=14  #8015=0 #1=l-4-110+16 #2=37 #3=-14 #1002=8 #201=1 #203=1 #1001=0 #9505=0 }W
+W#81{ ::WTp WS=15  #8015=1 #1=-32 #1002=8 #201=1 #203=1 #1001=0 #9505=0 }W
+W#2002{ ::WTg  }W
+}SIDE
+SIDE#3{
+::DX=0 XY=1
+$=Front
+}SIDE
+SIDE#4{
+::DX=0 XY=1
+$=Tail
+}SIDE
+SIDE#5{
+::DX=0 XY=1
+$=Back
+}SIDE
+SIDE#6{
+::DX=0 XY=1
+$=Head
+}SIDE
